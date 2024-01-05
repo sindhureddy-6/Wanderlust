@@ -42,6 +42,7 @@ const store = MongoStore.create({
 })
 
 const sessionOptions = {
+    store,
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
@@ -50,7 +51,7 @@ const sessionOptions = {
         maxAge: 7 * 24 * 60 * 60 * 1000,
         httpOnly: true
     },
-    store:store
+    
 }
 // app.get("/", (req, res) => {
 //     res.send("Hi, I am root");
