@@ -14,7 +14,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require("./models/users");
 const MongoStore = require('connect-mongo');
-const mongoUrl = process.env.MONGO_DB_URL
+const dbUrl = process.env.MONGO_DB_URL
 main().then(() => {
     console.log("connected succesfully");
 }).catch((err) => {
@@ -22,7 +22,7 @@ main().then(() => {
 })
 
  async function main() {
-     await mongoose.connect(mongoUrl);
+     await mongoose.connect(dbUrl);
 }
 
 app.set("view engine", "ejs");
@@ -33,13 +33,12 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 const store = MongoStore.create({
-    mongoUrl: mongoUrl,
-    secret: process.env.SECRET,
+    mongoUrl: dbUrl,
+    crypto: {
+        secret: process.env.SECRET,
+    },
     touchAfter: 24 * 3600,
-      mongoOptions: {
-        retryWrites: true,
-    }
-})
+});
 
 const sessionOptions = {
     store,
