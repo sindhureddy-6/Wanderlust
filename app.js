@@ -14,7 +14,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require("./models/users");
 const MongoStore = require('connect-mongo');
-const dbUrl = process.env.MONGO_DB_URL
+const dbUrl = process.env.MONGO_DB_URL;
 main().then(() => {
     console.log("connected succesfully");
 }).catch((err) => {
@@ -38,6 +38,10 @@ const store = MongoStore.create({
         secret: process.env.SECRET,
     },
     touchAfter: 24 * 3600,
+});
+
+store.on((err) => {
+    console.log("error in mongo session store", err);
 });
 
 const sessionOptions = {
