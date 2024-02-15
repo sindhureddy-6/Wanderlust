@@ -4,7 +4,6 @@ Wanderlust is a web application inspired by the popular accommodation booking pl
 
 ## Features
 
-- Accommodation Search: Users can search for accommodations based on location, dates, and other filters.
 - Accommodation Listings: Hosts can create and manage listings for their properties, including details such as pricing, availability, and amenities.
 - Booking System: Users can book accommodations, manage their bookings, and communicate with hosts.
 - User Authentication: Secure user authentication and authorization system for managing user accounts and sessions.
@@ -27,8 +26,3 @@ The project follows the Model-View-Controller (MVC) architecture, separating the
 - View: Renders the user interface using HTML, Bootstrap, and JavaScript.
 - Controller: Handles user requests, performs business logic, and interacts with both the model and view.
 
-## Getting Started
-
-To get started with Wanderlust, follow these steps:
-
-1. Clone the repository:
