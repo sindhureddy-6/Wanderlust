@@ -4,8 +4,7 @@ Wanderlust is a web application inspired by the popular accommodation booking pl
 
 ## Features
 
-- Accommodation Listings: Hosts can create and manage listings for their properties, including details such as pricing, availability, and amenities.
-- Booking System: Users can book accommodations, manage their bookings, and communicate with hosts.
+- Accommodation Listings: Hosts can create and manage listings for their properties, including details.
 - User Authentication: Secure user authentication and authorization system for managing user accounts and sessions.
 - Image Upload: Integration with Cloudinary for efficient storage and management of property images.
 - Google Maps Integration: Utilizes the Google Maps API for location services, allowing users to view property locations, nearby attractions, and directions.
