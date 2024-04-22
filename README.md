@@ -7,7 +7,7 @@ Wanderlust is a web application inspired by the popular accommodation booking pl
 - Accommodation Listings: Hosts can create and manage listings for their properties, including details.
 - User Authentication: Secure user authentication and authorization system for managing user accounts and sessions.
 - Image Upload: Integration with Cloudinary for efficient storage and management of property images.
-- Google Maps Integration: Utilizes the Google Maps API for location services, allowing users to view property locations, nearby attractions, and directions.
+- Mapbox Integration: Utilizes the Mapbox API for location services, allowing users to view property locations,
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@ Wanderlust is a web application inspired by the popular accommodation booking pl
 - Express.js: Web application framework for Node.js, used for handling routing and middleware.
 - HTML, Bootstrap, JavaScript: Frontend technologies for creating the user interface and client-side functionality.
 - Cloudinary: Cloud-based image management platform for storing and serving property images efficiently.
-- Google Maps API: Provides mapping and location services, including displaying property locations and nearby attractions.
+- Mapbox API: Provides mapping and location services.
 
 ## Architecture
 
