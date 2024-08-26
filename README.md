@@ -11,7 +11,7 @@ Wanderlust is a web application inspired by the popular accommodation booking pl
 
 ## Technologies Used
 
-- MongoDB: NoSQL database for storing accommodation listings, user data, and booking information.
+- MongoDB: NoSQL database for storing accommodation listings, user data.
 - Node.js: Server-side JavaScript runtime environment for building scalable and efficient web applications.
 - Express.js: Web application framework for Node.js, used for handling routing and middleware.
 - HTML, Bootstrap, JavaScript: Frontend technologies for creating the user interface and client-side functionality.
